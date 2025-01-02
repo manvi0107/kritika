@@ -13,7 +13,7 @@ const videoSources = [
   "krits.mp4",
   "harleen.mp4",
   "mehar.mp4",
-  "manvi.mp4", // Add more video file paths as needed
+  "manvi-2-2.mp4", // Add more video file paths as needed
 ];
 
 // Track the current video index
