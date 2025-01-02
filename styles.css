@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-image: url(IMG_1174.JPG);
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 header h1 {
   font-size: 3rem;
   margin: 0;
-  animation: slideIn 5s infinite alternate;
+  animation: slideIn 10s infinite alternate;
 }
 
 /* Animation */
@@ -53,7 +54,7 @@ header h1 {
 .slides {
   display: flex;
   width: 400%;
-  animation: slide 8s infinite;
+  animation: slide 10s infinite;
 }
 
 .slides img {
@@ -155,3 +156,4 @@ header h1 {
   font-size: 1rem;
   color: #ffffff;
 }
+
