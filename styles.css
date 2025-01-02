@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff7eb3, #ff758c);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: slideIn 5s infinite alternate;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: scale(1);
+    color: #ffe4e1;
+  }
+  to {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+}
+
+/* Slideshow */
+.slideshow {
+  margin: 20px 0;
+}
+
+.slideshow h2 {
+  font-size: 2rem;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  animation: slide 8s infinite;
+}
+
+.slides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Personal Note Section */
+.note {
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.note h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.note p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Video Notes Section */
+.video-notes {
+  margin: 40px 0;
+}
+
+.video-notes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video-notes video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+}
+
+.footer h2 {
+  font-size: 2rem;
+}
+
+.messages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.message {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.message h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #ffedec;
+}
+
+.message p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
