@@ -8,7 +8,9 @@ body {
   text-align: center;
   background-image: url(IMG_1174.JPG);
 }
-
+audio {
+  display: none;
+}
 header {
   background: linear-gradient(to right, #ff5e62, #ff9966);
   padding: 20px;
@@ -42,6 +44,17 @@ header h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     max-height: 700px;
   }
+.slideshow h2 {
+  colour:white;
+  padding-top:25px;
+  padding-bottom:25px;
+  margin-left:30px;
+  margin-right:30px:
+  border-radius:10px;
+  font-size:2rem;
+  background-colour:rgba(0,0,0,0.6);
+
+}
   
   .slides {
     display: flex;
