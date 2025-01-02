@@ -34,3 +34,15 @@ function playNextVideo() {
 
 // Attach the event listener to the button
 nextVideoBtn.addEventListener("click", playNextVideo);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bgMusic = document.getElementById("bgmusic");
+
+  // Ensure background music plays after a user interaction
+  document.body.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    }
+  });
+});
+
