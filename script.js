@@ -82,22 +82,30 @@ const videoSources = [
       }
     });
   });
-  document.addEventListener("DOMContentLoaded", () => {
-    const bgMusic = document.getElementById("bgmusic");
-    const videoPlayer = document.getElementById("videoPlayer");
-  
-    // Pause background music when the video starts playing
-    videoPlayer.addEventListener("play", () => {
-      bgMusic.pause();
-    });
-  
-    // Resume background music when the video is paused or ends
-    videoPlayer.addEventListener("pause", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const bgMusic = document.getElementById("bgmusic");
+  const videoPlayer = document.getElementById("videoPlayer");
+
+  // Allow autoplay after user interaction
+  document.body.addEventListener("click", () => {
+    if (bgMusic.paused) {
       bgMusic.play();
-    });
-  
-    videoPlayer.addEventListener("ended", () => {
-      bgMusic.play();
-    });
+    }
   });
+
+  // Pause background music when the video starts playing
+  videoPlayer.addEventListener("play", () => {
+    bgMusic.pause();
+  });
+
+  // Resume background music when the video is paused or ends
+  videoPlayer.addEventListener("pause", () => {
+    bgMusic.play();
+  });
+
+  videoPlayer.addEventListener("ended", () => {
+    bgMusic.play();
+  });
+});
+
   
