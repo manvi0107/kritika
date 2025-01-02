@@ -129,6 +129,23 @@ header h1 {
   margin: 40px 0;
 }
 
+#nextVideoBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #nextVideoBtn:hover {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+  }
+
+
 .video-notes h2 {
   font-size: 2rem;
   margin-bottom: 20px;
