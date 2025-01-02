@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Video sources array
 const videoSources = [
-  "manvi-2-2.mp4",
   "krits.mp4",
+  "manvi-2-2.mp4",
   "harleen.mp4",
   "mehar.mp4",
 // Add more video file paths as needed
